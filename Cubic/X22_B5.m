@@ -8,6 +8,9 @@ f1 := (t^2 + 10*t + 5)^3/t;
 tmp := (t^2/6 - 3)/(t^2 + 12*t + 30);
 f2 := (32*tmp - 4)/tmp^4;
 
+//Notice: one can just set f2 := (32*t - 4)/t^4; to get identical case as X7_B5.m,
+//this is more complicated, but good for exercise
+
 R<x,y> := PolynomialRing(Rationals(), 2);
 C := ProjectiveClosure(Curve(AffineSpace(R),Numerator(Evaluate(f1,x)-Evaluate(f2,y))));
 
