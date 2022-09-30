@@ -44,4 +44,4 @@ Evaluate(f1, -20);
 assert Evaluate(f1, -25/4) eq Evaluate(f2, 8/59);
 Evaluate(f1, -25/4);
 
-"One can notice that 4-isogeny is defined only over sextic field."
+"One can notice that 4-isogeny is defined only over sextic field.";
